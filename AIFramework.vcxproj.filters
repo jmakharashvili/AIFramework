@@ -42,6 +42,9 @@
     <Filter Include="Core %28do not edit%29">
       <UniqueIdentifier>{c721d74b-61d3-4ae0-9d17-be739d070a1c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="A%2a Pathfinding">
+      <UniqueIdentifier>{1e29e69c-55b7-451f-88e7-ede2f6b52aba}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <FxCompile Include="shader.fx">
@@ -55,32 +58,79 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AIManager.cpp" />
-    <ClCompile Include="src\Background.cpp" />
     <ClCompile Include="src\Collidable.cpp" />
     <ClCompile Include="src\CollisionHelper.cpp" />
-    <ClCompile Include="src\DDSTextureLoader.cpp" />
-    <ClCompile Include="src\DrawableGameObject.cpp" />
-    <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\PickupItem.cpp" />
     <ClCompile Include="src\Vehicle.cpp" />
     <ClCompile Include="src\Waypoint.cpp" />
     <ClCompile Include="src\WaypointManager.cpp" />
+    <ClCompile Include="src\DrawableGameObject.cpp">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DDSTextureLoader.cpp">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Background.cpp">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClCompile>
+    <ClCompile Include="src\PathNode.cpp">
+      <Filter>A%2a Pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Grid.cpp">
+      <Filter>A%2a Pathfinding</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pathfinding.cpp">
+      <Filter>A%2a Pathfinding</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\AIManager.h" />
-    <ClInclude Include="src\Background.h" />
     <ClInclude Include="src\Collidable.h" />
     <ClInclude Include="src\CollisionHelper.h" />
-    <ClInclude Include="src\constants.h" />
-    <ClInclude Include="src\DDSTextureLoader.h" />
-    <ClInclude Include="src\DrawableGameObject.h" />
-    <ClInclude Include="src\main.h" />
     <ClInclude Include="src\PickupItem.h" />
-    <ClInclude Include="src\Resource.h" />
-    <ClInclude Include="src\structures.h" />
-    <ClInclude Include="src\Vector2D.h" />
     <ClInclude Include="src\Vehicle.h" />
     <ClInclude Include="src\Waypoint.h" />
     <ClInclude Include="src\WaypointManager.h" />
+    <ClInclude Include="src\Resource.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\structures.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Vector2D.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DrawableGameObject.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DDSTextureLoader.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\constants.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\main.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Background.h">
+      <Filter>Core %28do not edit%29</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PathNode.h">
+      <Filter>A%2a Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Grid.h">
+      <Filter>A%2a Pathfinding</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pathfinding.h">
+      <Filter>A%2a Pathfinding</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AIFramework.rc">
+      <Filter>Core %28do not edit%29</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

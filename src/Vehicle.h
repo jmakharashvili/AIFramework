@@ -5,7 +5,6 @@
 #include "Vector2D.h"
 #include "Collidable.h"
 
-
 enum class carColour
 {
 	redCar,
@@ -19,7 +18,7 @@ public:
 	virtual void update(const float deltaTime);
 
 	void setMaxSpeed(const float maxSpeed) { m_maxSpeed = maxSpeed; }
-	void setCurrentSpeed(const float speed); // a ratio: a value between 0 and 1 (1 being max speed)
+	void SetCurrentSpeed(const float speed); // a ratio: a value between 0 and 1 (1 being max speed)
 	void setPositionTo(Vector2D positionTo); // a position to move to
 	void setVehiclePosition(Vector2D position); // the current position - this resets positionTo
 	void setWaypointManager(WaypointManager* wpm);

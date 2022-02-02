@@ -1,6 +1,7 @@
 #include "Vehicle.h"
 
-#define NORMAL_MAX_SPEED 200
+#define MINSPEED 100
+#define MAXSPEED 300
 
 HRESULT	Vehicle::initMesh(ID3D11Device* pd3dDevice, carColour colour)
 {
@@ -17,8 +18,8 @@ HRESULT	Vehicle::initMesh(ID3D11Device* pd3dDevice, carColour colour)
 
 	HRESULT hr = DrawableGameObject::initMesh(pd3dDevice);
 
-	m_maxSpeed = NORMAL_MAX_SPEED;
-	m_currentSpeed = m_maxSpeed;
+	m_maxSpeed = MAXSPEED;
+	m_currentSpeed = MINSPEED;
 	setVehiclePosition(Vector2D(0, 0));
 
 	m_lastPosition = Vector2D(0, 0);
@@ -60,11 +61,11 @@ void Vehicle::update(const float deltaTime)
 
 
 // a ratio: a value between 0 and 1 (1 being max speed)
-void Vehicle::setCurrentSpeed(const float speed)
+void Vehicle::SetCurrentSpeed(const float speed)
 {
 	m_currentSpeed = m_maxSpeed * speed;
-	m_currentSpeed = max(0, m_currentSpeed);
-	m_currentSpeed = min(1, m_currentSpeed);
+	m_currentSpeed = max(0, MINSPEED);
+	m_currentSpeed = min(1, MAXSPEED);
 }
 
 // set a position to move to

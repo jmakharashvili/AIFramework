@@ -1,0 +1,7 @@
+﻿  Grid.cpp
+  Pathfinding.cpp
+  PathNode.cpp
+C:\Users\m017735i\OneDrive - Staffordshire University\Github\AIFramework\src\PathNode.h(14,25): error C2059: syntax error: ')'
+C:\Users\m017735i\OneDrive - Staffordshire University\Github\AIFramework\src\PathNode.h(14,10): error C2143: syntax error: missing ')' before ';'
+  Vehicle.cpp
+  Generating Code...
