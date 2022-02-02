@@ -1,0 +1,14 @@
+﻿  AIManager.cpp
+  Background.cpp
+  Collidable.cpp
+  CollisionHelper.cpp
+  DDSTextureLoader.cpp
+  DrawableGameObject.cpp
+C:\Users\m017735i\OneDrive - Staffordshire University\Github\AIFramework 2022\DrawableGameObject.cpp(172,39): warning C4100: 'deltaTime': unreferenced formal parameter
+  main.cpp
+  PickupItem.cpp
+  Vehicle.cpp
+  Waypoint.cpp
+  WaypointManager.cpp
+  Generating Code...
+  AIFramework.vcxproj -> C:\Users\m017735i\OneDrive - Staffordshire University\Github\AIFramework 2022\x64\Debug\AIFramework.exe
